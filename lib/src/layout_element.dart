@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_html/html_parser.dart';
-import 'package:flutter_html/src/anchor.dart';
-import 'package:flutter_html/src/html_elements.dart';
-import 'package:flutter_html/src/styled_element.dart';
-import 'package:flutter_html/style.dart';
+import 'package:wenz_flutter_html/html_parser.dart';
+import 'package:wenz_flutter_html/src/anchor.dart';
+import 'package:wenz_flutter_html/src/html_elements.dart';
+import 'package:wenz_flutter_html/src/styled_element.dart';
+import 'package:wenz_flutter_html/style.dart';
 import 'package:html/dom.dart' as dom;
 
 /// A [LayoutElement] is an element that breaks the normal Inline flow of

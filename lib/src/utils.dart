@@ -2,7 +2,7 @@ import 'dart:convert';
 import 'dart:math';
 
 import 'package:flutter/material.dart';
-import 'package:flutter_html/style.dart';
+import 'package:wenz_flutter_html/style.dart';
 
 Map<String, String> namedColors = {
   "White": "#FFFFFF",

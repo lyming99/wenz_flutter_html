@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_html/src/css_parser.dart';
-import 'package:flutter_html/style.dart';
+import 'package:wenz_flutter_html/src/css_parser.dart';
+import 'package:wenz_flutter_html/style.dart';
 import 'package:html/dom.dart' as dom;
 //TODO(Sub6Resources): don't use the internal code of the html package as it may change unexpectedly.
 import 'package:html/src/query_selector.dart';

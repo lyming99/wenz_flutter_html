@@ -2,15 +2,15 @@ import 'dart:math';
 
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
-import 'package:flutter_html/html_parser.dart';
-import 'package:flutter_html/src/anchor.dart';
-import 'package:flutter_html/src/html_elements.dart';
-import 'package:flutter_html/src/navigation_delegate.dart';
-import 'package:flutter_html/src/utils.dart';
-import 'package:flutter_html/src/widgets/iframe_unsupported.dart'
-  if (dart.library.io) 'package:flutter_html/src/widgets/iframe_mobile.dart'
-  if (dart.library.html) 'package:flutter_html/src/widgets/iframe_web.dart';
-import 'package:flutter_html/style.dart';
+import 'package:wenz_flutter_html/html_parser.dart';
+import 'package:wenz_flutter_html/src/anchor.dart';
+import 'package:wenz_flutter_html/src/html_elements.dart';
+import 'package:wenz_flutter_html/src/navigation_delegate.dart';
+import 'package:wenz_flutter_html/src/utils.dart';
+import 'package:wenz_flutter_html/src/widgets/iframe_unsupported.dart'
+  if (dart.library.io) 'package:wenz_flutter_html/src/widgets/iframe_mobile.dart'
+  if (dart.library.html) 'package:wenz_flutter_html/src/widgets/iframe_web.dart';
+import 'package:wenz_flutter_html/style.dart';
 import 'package:html/dom.dart' as dom;
 
 /// A [ReplacedElement] is a type of [StyledElement] that does not require its [children] to be rendered.

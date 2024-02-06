@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_html/src/html_elements.dart';
-import 'package:flutter_html/style.dart';
+import 'package:wenz_flutter_html/src/html_elements.dart';
+import 'package:wenz_flutter_html/style.dart';
 import 'package:html/dom.dart' as dom;
 
 /// An [InteractableElement] is a [StyledElement] that takes user gestures (e.g. tap).

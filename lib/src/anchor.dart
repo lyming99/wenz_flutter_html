@@ -1,6 +1,6 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/widgets.dart';
-import 'package:flutter_html/src/styled_element.dart';
+import 'package:wenz_flutter_html/src/styled_element.dart';
 
 class AnchorKey extends GlobalKey {
   static final Set<AnchorKey> _registry = <AnchorKey>{};

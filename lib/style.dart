@@ -1,7 +1,7 @@
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
-import 'package:flutter_html/src/css_parser.dart';
+import 'package:wenz_flutter_html/src/css_parser.dart';
 
 import 'html_parser.dart';
 

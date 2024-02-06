@@ -5,8 +5,8 @@ import 'package:csslib/visitor.dart' as css;
 import 'package:csslib/parser.dart' as cssparser;
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_html/src/utils.dart';
-import 'package:flutter_html/style.dart';
+import 'package:wenz_flutter_html/src/utils.dart';
+import 'package:wenz_flutter_html/style.dart';
 
 import '../html_parser.dart';
 
