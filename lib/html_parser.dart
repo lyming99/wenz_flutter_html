@@ -7,7 +7,6 @@ import 'package:csslib/visitor.dart' as css;
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
-import 'package:flutter_html/image_render.dart';
 import 'package:flutter_html/src/anchor.dart';
 import 'package:flutter_html/src/css_parser.dart';
 import 'package:flutter_html/src/html_elements.dart';
@@ -53,7 +52,6 @@ class HtmlParser extends StatelessWidget {
 
   final Map<String, Style> style;
   final Map<String, CustomRender> customRender;
-  final Map<ImageSourceMatcher, ImageRender> imageRenders;
   final List<String> tagsList;
   final NavigationDelegate? navigationDelegateForIframe;
   final OnTap? _onAnchorTap;
@@ -75,7 +73,6 @@ class HtmlParser extends StatelessWidget {
     required this.selectable,
     required this.style,
     required this.customRender,
-    required this.imageRenders,
     required this.tagsList,
     required this.navigationDelegateForIframe,
     this.selectionControls,

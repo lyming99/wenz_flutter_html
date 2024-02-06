@@ -76,25 +76,6 @@ class ImageContentElement extends ReplacedElement {
 
   @override
   Widget toWidget(RenderContext context) {
-    for (final entry in context.parser.imageRenders.entries) {
-      if (entry.key.call(attributes, element)) {
-        final widget = entry.value.call(context, attributes, element);
-        return Builder(
-          builder: (buildContext) {
-            return GestureDetector(
-              key: AnchorKey.of(context.parser.key, this),
-              child: widget,
-              onTap: () {
-                if (MultipleTapGestureDetector.of(buildContext) != null) {
-                  MultipleTapGestureDetector.of(buildContext)!.onTap?.call();
-                }
-                context.parser.onImageTap?.call(src, context, attributes, element);
-              },
-            );
-          }
-        );
-      }
-    }
     return SizedBox(width: 0, height: 0);
   }
 }
