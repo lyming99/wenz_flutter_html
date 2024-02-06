@@ -11,3 +11,4 @@ export 'package:flutter_html/src/styled_element.dart';
 export 'package:flutter_html/src/navigation_delegate.dart';
 //export style api
 export 'package:flutter_html/style.dart';
+export 'package:flutter_html/src/html_elements.dart';
