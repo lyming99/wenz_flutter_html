@@ -7,9 +7,6 @@ import 'package:wenz_flutter_html/src/anchor.dart';
 import 'package:wenz_flutter_html/src/html_elements.dart';
 import 'package:wenz_flutter_html/src/navigation_delegate.dart';
 import 'package:wenz_flutter_html/src/utils.dart';
-import 'package:wenz_flutter_html/src/widgets/iframe_unsupported.dart'
-  if (dart.library.io) 'package:wenz_flutter_html/src/widgets/iframe_mobile.dart'
-  if (dart.library.html) 'package:wenz_flutter_html/src/widgets/iframe_web.dart';
 import 'package:wenz_flutter_html/style.dart';
 import 'package:html/dom.dart' as dom;
 
@@ -322,15 +319,6 @@ ReplacedElement parseReplacedElement(
         style: Style(whiteSpace: WhiteSpace.PRE),
         element: element,
         node: element
-      );
-    case "iframe":
-      return IframeContentElement(
-          name: "iframe",
-          src: element.attributes['src'],
-          width: double.tryParse(element.attributes['width'] ?? ""),
-          height: double.tryParse(element.attributes['height'] ?? ""),
-          navigationDelegate: navigationDelegateForIframe,
-          node: element,
       );
     case "img":
       return ImageContentElement(
